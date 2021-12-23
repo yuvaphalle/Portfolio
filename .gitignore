@@ -11,6 +11,7 @@
 # production
 /node_modules
 /public
+/build
 /src
 /package-lock.json
 /package.json
