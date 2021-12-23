@@ -9,7 +9,13 @@
 /coverage
 
 # production
-/build
+/node_modules
+/public
+/src
+/package-lock.json
+/package.json
+/README.md
+/resume-screenshot.png
 
 # misc
 .DS_Store
