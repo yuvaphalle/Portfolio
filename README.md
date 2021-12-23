@@ -1,6 +1,6 @@
 # Portfolio
 
-![React JS Portfolio](resume-screenshot.jpg?raw=true "React JS Portfolio")
+![React JS Portfolio](resume-screenshot.png?raw=true "React JS Portfolio")
 ## Make sure you have NODE installed!
 
 
