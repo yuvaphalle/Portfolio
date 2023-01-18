@@ -4,18 +4,18 @@
     "occupation": " ",
     "description": "",
     "image": "profile.jpg",
-    "bio": "MSc in Information Security with 3+ Years of Coding experience using various Technologies, an excellence seeker, perfectionist and a passionate learner. Believes in Clean Coding, Test Driven Secure Development along with Information Risk Management.",
+    "bio": "MSc in Information Security with 3+ Years of Coding experience using various Technologies, an excellence seeker, perfectionist and a passionate learner. Believes in Clean Coding, Test Driven Secure Development along with Information Risk Management.\n Currently working at Hacking Lab as Hacking Lab Challenge Developer. \n\n",
     "contactmessage": "Get in touch with me!",
     "email": "yuva.phalle@sit.study",
     "phone": "+41 #########",
     "address": {
-      "street": "Rheinweg 9",
-      "city": "Switzerland",
-      "state": "Switzerland",
-      "zip": "8200"
+      "street": "",
+      "city": "Zurich",
+      "state": "",
+      "zip": " Switzerland"
     },
     "website": "yuvaphalle.com",
-    "resumedownload": "https://drive.google.com/file/d/1tGymJexDdsm0Pg3lA3Y_5pGw8ZgF9E3J/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/1CHIbCB8AwmtnOkbZyHOmBBQWY5r0mjop/view",
     "social": [
       {
         "name": "youtube",
@@ -50,13 +50,13 @@
       {
         "school": "Schaffhausen Institute of Technology - Switzerland",
         "degree": "Master of Computer Science and Software Engineering",
-        "graduated": "September 2020 - Present"
+        "graduated": "September 2020 - June 2022"
       },
       
       {
         "school": "ITMO University - Russia",
         "degree": "Master of Science in Information Security",
-        "graduated": "August 2018 - Juuly 2020"
+        "graduated": "August 2018 - July 2020"
       },
       
       {
@@ -72,16 +72,28 @@
       }
     ],
     "work": [
+      { 
+        "company":"Hacking-Lab AG / Compass Security - Switzerland",
+        "title": "Hacking-Lab Challenge Developer",
+        "years": "August 2022 - Present",
+        "description": "Challenge Development: Conception, development and integration of new cyber security challenges. Testing: Quality control of own, existing and third-party security challenges. Implementation of remote or on-site capture-the-flag events and cyber security training.Support Hacking-Lab users via Discord, Chat, Mail or Jira. Recording videos of walkthroughs and hacking tutorials."
+      },
       {
-        "company": "Schaffhausen Institute of Technology - Switzerland",
+        "company": "Schaffhausen Institute of Technology / Constructor Group  - Switzerland",
+        "title": "Administrative Office Assistant",
+        "years": "April 2022 - August 2022",
+        "description": "Administrative Office Assistant for the Constructor Group. Responsible for the administrative tasks of the Constructor Group."
+      },
+      {
+        "company": "Schaffhausen Institute of Technology / Constructor Group - Switzerland",
         "title": "Teaching Assistant ",
-        "years": "September 2021 - Present",
+        "years": "September 2021 - February 2022",
         "description": "TA for Cyber Protection coursework covering Cryptography, Android Security, Fuzzing, Access Control"
       },
       {
         "company": "Capstone Project - Switzerland",
         "title": "Full Stack Developer",
-        "years": "October 2020 - Present",
+        "years": "October 2020 - January 2022",
         "description": "Developed and managed food recipe platform. Using Django, PostgreSQL, React, Miro, Slack, Docker, and CI/CD"     
       },
       {
