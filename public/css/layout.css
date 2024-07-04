@@ -21,6 +21,7 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 body { background: #0f0f0f; }
 
@@ -101,7 +102,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff;  }
-header .social li a:hover { color: #069ba0; }
+header .social li a:hover { color: #fff; }
 
 
 /* scrolldown link */
@@ -124,7 +125,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #fff; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -195,14 +196,14 @@ ul#nav li.current a { color: #19cec5; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #163438;
+   background: #343a40;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #FFF; }
 
 #about h2 {
    font: 30px/30px 'opensans-bold', sans-serif;
@@ -257,7 +258,7 @@ ul#nav li.current a { color: #19cec5; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #FFF; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -851,10 +852,10 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #163438;
+   background: #343a40;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #1a7e06;
+   color: #11ABB0;
 }
 #contact .section-head { margin-bottom: 42px; }
 

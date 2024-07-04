@@ -4,9 +4,9 @@
     "occupation": " ",
     "description": "",
     "image": "profile.jpg",
-    "bio": "MSc in Information Security with 3+ Years of Coding experience using various Technologies, an excellence seeker, perfectionist and a passionate learner. Believes in Clean Coding, Test Driven Secure Development along with Information Risk Management.\n Currently working at Hacking Lab as Hacking Lab Challenge Developer. \n\n",
+    "bio": "Highly motivated and results-oriented cybersecurity professional with a Master\u2019s degree in Information Security and 3+ years of Coding experience using various Technologies including technical sales. Skilled in client consultation, solution customization, and sales strategy development. Proven ability to build strong relationships and deliver exceptional customer support. Currently working at Hacking Lab as Cyber Security Technical Sales Consultant.",
     "contactmessage": "Get in touch with me!",
-    "email": "yuva.phalle@sit.study",
+    "email": "yuvaphalle.work@gmail.com",
     "phone": "+41 #########",
     "address": {
       "street": "",
@@ -17,16 +17,6 @@
     "website": "yuvaphalle.com",
     "resumedownload": "https://drive.google.com/file/d/1CHIbCB8AwmtnOkbZyHOmBBQWY5r0mjop/view",
     "social": [
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/watch?v=A6YQ6I-moCI",
-        "className": "fa fa-youtube"
-      },
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/add.yuva",
-        "className": "fa fa-facebook"
-      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/yuvaphalle",
@@ -52,55 +42,52 @@
         "degree": "Master of Computer Science and Software Engineering",
         "graduated": "September 2020 - June 2022"
       },
-      
       {
         "school": "ITMO University - Russia",
         "degree": "Master of Science in Information Security",
         "graduated": "August 2018 - July 2020"
       },
-      
       {
         "school": "Tallinn University of Technology - Estonia",
-        "degree": "Erasmus",
+        "degree": "Erasmus (M.S. in Information Security)",
         "graduated": "August 2019 - January 2020"
       },
-
       {
         "school": "SICSR - India",
-        "degree": "Bachelor of Computer Application ",
+        "degree": "Bachelor of Computer Application",
         "graduated": "July 2015 - July 2018"
       }
     ],
     "work": [
-      { 
-        "company":"Hacking-Lab AG / Compass Security - Switzerland",
-        "title": "Hacking-Lab Challenge Developer",
+      {
+        "company": "Hacking-Lab AG",
+        "title": "Cyber Security Technical Sales Consultant",
+        "years": "September 2023 - Present",
+        "description": "Client Consultation, Solution Customization, Sales Strategy Development, Relationship Building, Product Knowledge, Sales Presentations, Negotiation, Customer Support, Market Research"
+      },
+      {
+        "company": "Hacking-Lab AG",
+        "title": "Lead Hacking-Lab Challenge Developer",
         "years": "August 2022 - Present",
-        "description": "Challenge Development: Conception, development and integration of new cyber security challenges. Testing: Quality control of own, existing and third-party security challenges. Implementation of remote or on-site capture-the-flag events and cyber security training.Support Hacking-Lab users via Discord, Chat, Mail or Jira. Recording videos of walkthroughs and hacking tutorials."
+        "description": "Challenge Development: Conception, development and integration of new cyber security challenges. Testing: Quality control of own, existing and third-party security challenges. Implementation of remote or on-site capture-the-flag events and cyber security training. Sales and project management. Support Hacking-Lab users via Discord, Chat, Mail or Jira. Recording videos of walkthroughs and hacking tutorials."
       },
       {
-        "company": "Schaffhausen Institute of Technology / Constructor Group  - Switzerland",
-        "title": "Administrative Office Assistant",
-        "years": "April 2022 - August 2022",
-        "description": "Administrative Office Assistant for the Constructor Group. Responsible for the administrative tasks of the Constructor Group."
+        "company": "Schaffhausen Institute of Technology / Constructor Group",
+        "title": "Master\u2019s Startup Thesis",
+        "years": "November 2021 - May 2022",
+        "description": "Developed a comprehensive car parking sharing solution named SpotLot. Designed and implemented a user-friendly platform for efficient parking space sharing. Conducted market research and identified opportunities for parking solutions."
       },
       {
-        "company": "Schaffhausen Institute of Technology / Constructor Group - Switzerland",
-        "title": "Teaching Assistant ",
+        "company": "Schaffhausen Institute of Technology / Constructor Group",
+        "title": "Teaching Assistant",
         "years": "September 2021 - February 2022",
-        "description": "TA for Cyber Protection coursework covering Cryptography, Android Security, Fuzzing, Access Control"
+        "description": "Cyber Protection: TA for Cyber Protection coursework covering Cryptography, Android Security, Fuzzing, Access Control."
       },
       {
-        "company": "Capstone Project - Switzerland",
+        "company": "Capstone Project",
         "title": "Full Stack Developer",
-        "years": "October 2020 - January 2022",
-        "description": "Developed and managed food recipe platform. Using Django, PostgreSQL, React, Miro, Slack, Docker, and CI/CD"     
-      },
-      {
-        "company": "• Mindly OU - Estonia",
-        "title": "Full Stack Developer",
-        "years": "October 2019 - December 2019",
-        "description": "Developed Crypto portfolio wallet as a project. Using Python flask, SQLite"
+        "years": "September 2020 - January 2022",
+        "description": "EasyPeasy: Developed and managed food recipe platform. Using Django, PostgreSQL, React, Miro, Slack."
       }
     ],
     "skills": [
@@ -112,6 +99,12 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title": "SpotLot",
+        "category": "",
+        "image": "spot.jpg",
+        "url": "https://spotlot.vercel.app/"
+      },
       {
         "title": "Adma Mater",
         "category": "",
@@ -130,12 +123,11 @@
         "image": "easyp.jpg",
         "url": "http://34.90.185.41/"
       },
-
       {
         "title": "Morails Decentralized Webapp Using MetaMask",
         "category": "",
         "image": "yverse.jpg",
-        "url": "http://yverse.yuvaphalle.com/"
+        "url": "https://yverse.vercel.app/"
       }
     ]
   },

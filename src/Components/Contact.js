@@ -93,8 +93,8 @@ const Contact = ({ data }) => {
                   Message <span className="required">*</span>
                 </label>
                 <textarea
-                  cols="50"
-                  rows="15"
+                  cols="20"
+                  rows="5"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   id="contactMessage"
