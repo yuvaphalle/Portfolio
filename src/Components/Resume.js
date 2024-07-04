@@ -1,6 +1,62 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Resume = ({ data }) => {
+  const slideshowRef = useRef(null);
+  const isTransitioning = useRef(false);
+
+  useEffect(() => {
+    if (slideshowRef.current) {
+      const slideshow = slideshowRef.current;
+
+      // Clone slides to create an infinite loop effect
+      const slides = Array.from(slideshow.children);
+      slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        slideshow.appendChild(clone);
+      });
+
+      const handleScroll = () => {
+        if (slideshow.scrollLeft === 0) {
+          slideshow.scrollLeft = slideshow.scrollWidth / 2;
+        } else if (
+          slideshow.scrollLeft >=
+          slideshow.scrollWidth - slideshow.clientWidth
+        ) {
+          slideshow.scrollLeft = slideshow.scrollWidth / 2 - slideshow.clientWidth;
+        }
+      };
+
+      slideshow.addEventListener("scroll", handleScroll);
+      slideshow.scrollLeft = slideshow.scrollWidth / 2;
+
+      return () => {
+        slideshow.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextSlide = () => {
+    if (slideshowRef.current) {
+      const slideshow = slideshowRef.current;
+      slideshow.scrollBy({ left: 150, behavior: "smooth" });
+    }
+  };
+
+  const prevSlide = () => {
+    if (slideshowRef.current) {
+      const slideshow = slideshowRef.current;
+      slideshow.scrollBy({ left: -150, behavior: "smooth" });
+    }
+  };
+
   if (data) {
     var skillmessage = data.skillmessage;
     var education = data.education.map(function (education) {
@@ -27,16 +83,39 @@ const Resume = ({ data }) => {
         </div>
       );
     });
-    var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
-      return (
-        <li key={skills.name}>
-          <span style={{ width: skills.level }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
-      );
-    });
   }
+
+  const skillImages = [
+    "images/js.png",
+    "images/docker.png",
+    "images/android.png",
+    "images/html-5.png",
+    "images/python.png",
+    "images/github.png",
+    "images/gitlab.png",
+    "images/drupal.png",
+    "images/heroku.png",
+    "images/react.png",
+    "images/sql-server.png",
+    "images/php-code.png",
+    "images/colab.png",
+    "images/node.png",
+    "images/auto.png",
+    "images/java.png",
+    "images/flask.png",
+    "images/django.png",
+    "images/nextjs.png",
+    "images/tailwind.png",
+    "images/arduino.png",
+    "images/jira.png",
+    "images/crm.png",
+    "images/azure.png",
+    "images/unix.png",
+  ];
+
+  const slides = skillImages.map((src, index) => (
+    <img key={index} className="skillset" src={src} alt="" />
+  ));
 
   return (
     <section id="resume">
@@ -74,14 +153,16 @@ const Resume = ({ data }) => {
         <div className="nine columns main-col">
           <p>{skillmessage}</p>
 
-          <div className="bars">
-          <div>
-          <img class="skillset" src="images/js.png" /> <img class="skillset" src="images/docker.png" /> <img class="skillset" src="images/android.png" /> <img class="skillset" src="images/html-5.png" />
-          <img class="skillset" src="images/python.png" /> <img class="skillset" src="images/github.png" /> <img class="skillset" src="images/gitlab.png" /> <img class="skillset" src="images/drupal.png" />
-          <img class="skillset" src="images/heroku.png" /> <img class="skillset" src="images/react.png" /> <img class="skillset" src="images/sql-server.png" /> <img class="skillset" src="images/php-code.png" />
-          <img class="skillset" src="images/colab.png" /> <img class="skillset" src="images/node.png" /> <img class="skillset" src="images/auto.png" /> <img class="skillset" src="images/java.png" />    
-          </div>
-            
+          <div className="skill-slideshow-wrapper">
+            <button className="slide-btn left" onClick={prevSlide}>
+              &#10094;
+            </button>
+            <div className="skill-slideshow" ref={slideshowRef}>
+              {slides}
+            </div>
+            <button className="slide-btn right" onClick={nextSlide}>
+              &#10095;
+            </button>
           </div>
         </div>
       </div>
